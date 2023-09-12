@@ -6,7 +6,3 @@ type Meetup struct {
 	Description string `json:"description"`
 	UserID      string `json:"userId"`
 }
-
-func (m *Meetup) IsOwner(user *User) bool {
-	return m.UserID == user.ID
-}

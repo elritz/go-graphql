@@ -1,4 +1,4 @@
-module github.com/elritz/meetmeup
+module github.com/elritz/go-meetup
 
 go 1.13
 

@@ -6,21 +6,21 @@
 schema:
 - schema.graphql
 exec:
-  filename: graphql/generated.go
+  filename: generated.go
 model:
-  filename: models/models_gen.go
+  filename: models_gen.go
 models:
   User:
-    model: github.com/elritz/meetmeup/models.User
+    model: github.com/elritz/go-graphql/models.User
     fields:
       meetups:
         resolver: true
   Meetup:
-    model: github.com/elritz/meetmeup/models.Meetup
+    model: github.com/elritz/go-graphql/models.Meetup
     fields:
       user:
         resolver: true
 resolver:
-  filename: graphql/resolver.go
+  filename: resolver.go
   type: Resolver
 autobind: []
